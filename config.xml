@@ -7,7 +7,7 @@
 		<name>Cargoland Express</name>
 		<description>Send Anything! Anywhere!</description>
 		<author href="#" email="hipheckt@gmail.com">Hipheckts' Inc.</author>
-		<preference name="phonegap-version" value="cli-6.3.0" />
+		<preference name="phonegap-version" value="cli-6.5.0" />
 		<preference name="orientation" value="auto" />
 		<preference name="fullscreen" value="true" />
 		<preference name="target-device" value="universal" />
