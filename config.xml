@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 	<widget xmlns = "http://www.w3.org/ns/widgets"
 		xmlns:gap = "http://phonegap.com/ns/1.0"
-		id        = "com.cargoland.courierexpress"
+		id        = "com.wordpress2app.webapp"
 		versionCode="2"
 		version   = "2.6.7">
-		<name>Cargoland Express</name>
+		<name>Courier Express</name>
 		<description>Send Anything! Anywhere!</description>
-		<author href="#" email="hipheckt@gmail.com">Hipheckts' Inc.</author>
+		<author href="http://wordpress2app.com/" email="wp2android.xyz@gmail.com">Wappress App Builder</author>
 		<preference name="phonegap-version" value="cli-6.5.0" />
 		<preference name="orientation" value="portrait" />
 		<preference name="fullscreen" value="true" />
@@ -32,7 +32,7 @@
 		<preference name="android-installLocation" value="auto" />
 		<preference name="SplashScreenDelay" value="3000" />
 		<preference name="ErrorUrl" value=""/>
-		<preference name="BackgroundColor" value="ffffff"/>
+		<preference name="BackgroundColor" value="0x000000"/>
 		<preference name="KeepRunning" value="true"/>
 		<preference name="DisallowOverscroll" value="false"/>
 		<preference name="LoadingDialog" value=","/> 
