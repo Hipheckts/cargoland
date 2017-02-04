@@ -44,7 +44,9 @@
                         <div class="hamburger-icon"></div>
                     </button>
 
-                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-xl" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="signin.html">SIGN IN</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="#" aria-expanded="false" data-toggle="dropdown-submenu">HELP</a><div class="dropdown-menu"><a class="dropdown-item" href="register.html">Account Registration</a><a class="dropdown-item" href="#">Sending Package</a><a class="dropdown-item" href="#">Tracking Package</a></div></li></ul>
+                    <ul class="nav-dropdown collapse pull-xs-right nav navbar-nav navbar-toggleable-xl" id="exCollapsingNavbar"><li class="nav-item"><a class="nav-link link" href="signin.html">SIGN IN</a></li><li class="nav-item dropdown"><a class="nav-link link dropdown-toggle" href="#" aria-expanded="false" data-toggle="dropdown-submenu">HELP</a><div class="dropdown-menu"><a class="dropdown-item" href="register.html">Account Registration</a><a class="dropdown-item" href="#">Sending Package</a><a class="dropdown-item" href="#">Tracking Package</a></div></li>
+                    <li class="nav-item"><a onclick="showConfirm(); return false;" class="nav-link link">EXIT APP</a></li>
+                    </ul>
                     <button hidden="" class="navbar-toggler navbar-close" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
                         <div class="close-icon"></div>
                     </button>    
@@ -96,6 +98,21 @@
   <script src="assets/dropdown/js/script.min.js"></script>
   <script src="assets/touchSwipe/jquery.touchSwipe.min.js"></script>
   <script src="assets/theme/js/script.js"></script>
+  <script> function showConfirm() {
+        navigator.notification.confirm(
+            'Do you really want to exit?',  // message
+            exitFromApp,              // callback to invoke with index of button pressed
+            'Exit',            // title
+            'Cancel,OK'         // buttonLabels
+        );
+    }
+
+    
+    function exitFromApp(buttonIndex) {
+      if (buttonIndex==2){
+       navigator.app.exitApp();
+    	}
+        </script>
   
   
 
